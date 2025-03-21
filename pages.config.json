@@ -1,0 +1,7 @@
+{
+  "buildConfig": {
+    "buildCommand": "./cloudflare-build.sh",
+    "outputDir": ".open-next/assets",
+    "rootDir": "/"
+  }
+}

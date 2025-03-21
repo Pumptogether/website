@@ -1,0 +1,11 @@
+{
+  "buildConfig": {
+    "buildCommand": "./cloudflare-build.sh",
+    "outputDirectory": ".open-next/assets",
+    "nodeVersion": "18"
+  },
+  "routes": [
+    { "pattern": "pumptogether.xyz", "customDomain": true }
+  ],
+  "deploymentStrategy": "all-at-once"
+}

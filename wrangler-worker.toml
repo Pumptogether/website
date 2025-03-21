@@ -1,0 +1,21 @@
+# Cloudflare Worker configuration
+name = "pumptogether-website"
+compatibility_date = "2024-03-20"
+compatibility_flags = ["nodejs_compat"]
+workers_dev = false
+main = ".open-next/worker.js"
+
+# Custom domain configuration
+routes = [
+  { pattern = "pumptogether.xyz", custom_domain = true }
+]
+
+# Assets configuration
+[assets]
+directory = ".open-next/assets"
+binding = "SITE_ASSETS"
+
+# For KV-based caching (uncomment and add your KV ID if you want to use caching)
+# [[kv_namespaces]]
+# binding = "NEXT_CACHE_WORKERS_KV"
+# id = "<YOUR_KV_ID>"

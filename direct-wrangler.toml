@@ -1,0 +1,13 @@
+name = "pumptogether-website"
+main = "static-site-worker.js"
+compatibility_date = "2024-03-20"
+compatibility_flags = ["nodejs_compat"]
+
+# Custom domain configuration
+routes = [
+  { pattern = "pumptogether.xyz", custom_domain = true }
+]
+
+# Site configuration for deploying static assets
+[site]
+bucket = "./out"
